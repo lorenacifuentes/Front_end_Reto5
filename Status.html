@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOTELERÍA</title>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+       <meta name="author" content="Lorena Cifuentes Rojas">
+       <meta name="description" content="Pagina de status">
+       <meta name="keywords" content="Pagina donde se muestran lo status de las reservaciones">
+     
+    </head>
+        <link rel = "stylesheet" type="text/css" href="estilos.css">
+        <center>
+        <span style="color:rgb(58, 115, 221)"><h1>STATUS RESERVAS</h1></span>
+    <div id="resultadoStatus"></div>
+    <fieldset style="width: 10%">
+        <legend>Status reservacion</legend>
+    <table>
+        <tbody>
+            <button onclick="traerReporteStatus()"> Status Reservas </button>
+        </tbody>      
+    </table>
+    </fieldset>
+
+    <span style="color:rgb(58, 115, 221)"><h3>STATUS FECHAS</h3></span>
+    <div id="resultadoDate"></div>
+    <fieldset style="width: 11%">
+        <legend>Status reservacion</legend>
+    <table>
+        <tbody>
+            <tr><td><span style="color:blueviolet"><b>DÍA DE INICIO</b></span></td>
+            <td><input type="date" id="RstarDate" placeholder="descripcion"></td>
+            <tr><td>><span style="color:blueviolet"><b>DÍA DE FINALIZACION</b></span></td>
+            <td><input type="date" id="RdevolutionDate" placeholder="descripcion"></td>
+            <button onclick="traerReporteDate()"> Reporte por fecha </button>
+        </tbody>      
+    </table>
+    </fieldset>
+ 
+    <span style="color:rgb(58, 115, 221)"><h3>STATUS RESERVACION</h3></span>
+    <div id="resultadoClientes"></div>
+    <fieldset style="width: 15%">
+        <legend>Status reservacion</legend>
+    <table>
+        <tbody>
+            <button onclick="traerReporteClientes()">  Reporte Clientes y Reservas por cliente </button>
+        </tbody>      
+    </table>
+    </fieldset>
+</center>
+</body>
+  
+</html>
